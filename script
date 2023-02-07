@@ -1,0 +1,508 @@
+local VehicleSImulatorgui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local mbar1 = Instance.new("Frame")
+local mbar2 = Instance.new("Frame")
+local Carhack = Instance.new("TextButton")
+local Carhack2 = Instance.new("Frame")
+local Carspeed = Instance.new("TextButton")
+local Teleporttocar = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
+local Torque = Instance.new("TextButton")
+local Nitrospeed = Instance.new("TextButton")
+local Nitroforce = Instance.new("TextButton")
+local Nitroheight = Instance.new("TextButton")
+local Amount1 = Instance.new("TextBox")
+local Amount2 = Instance.new("TextBox")
+local Amount3 = Instance.new("TextBox")
+local Amount4 = Instance.new("TextBox")
+local Amount5 = Instance.new("TextBox")
+local Close = Instance.new("TextButton")
+local Crate = Instance.new("TextButton")
+local Crate2 = Instance.new("Frame")
+local Teleporttocrate = Instance.new("TextButton")
+local Crateesp = Instance.new("TextButton")
+local Close_2 = Instance.new("TextButton")
+local Gamepass = Instance.new("TextButton")
+local Gamepass2 = Instance.new("Frame")
+local Getallperks = Instance.new("TextButton")
+local Close_3 = Instance.new("TextButton")
+local Credits = Instance.new("TextLabel")
+local Credits2 = Instance.new("TextLabel")
+--Properties:
+VehicleSImulatorgui.Name = "VehicleSImulatorgui"
+VehicleSImulatorgui.Parent = game.CoreGui
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = VehicleSImulatorgui
+MainFrame.Active = true
+MainFrame.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.0548245609, 0, 0.217391312, 0)
+MainFrame.Selectable = true
+MainFrame.Size = UDim2.new(0, 320, 0, 385)
+MainFrame.Style = Enum.FrameStyle.RobloxRound
+MainFrame.Active = true
+MainFrame.Draggable = true
+ 
+mbar1.Name = "mbar1"
+mbar1.Parent = MainFrame
+mbar1.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+mbar1.Position = UDim2.new(-0.0135025028, 0, -0.0110843806, 0)
+mbar1.Size = UDim2.new(0, 313, 0, 17)
+ 
+mbar2.Name = "mbar2"
+mbar2.Parent = MainFrame
+mbar2.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+mbar2.Position = UDim2.new(-0.0253273975, 0, 0.0353492685, 0)
+mbar2.Size = UDim2.new(0, 317, 0, 17)
+ 
+Carhack.Name = "Carhack"
+Carhack.Parent = MainFrame
+Carhack.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Carhack.Position = UDim2.new(0.074032262, 0, 0.165167823, 0)
+Carhack.Size = UDim2.new(0, 255, 0, 38)
+Carhack.Font = Enum.Font.SourceSans
+Carhack.Text = "Car"
+Carhack.TextColor3 = Color3.new(1, 1, 1)
+Carhack.TextScaled = true
+Carhack.TextSize = 14
+Carhack.TextWrapped = true
+ 
+Carhack2.Name = "Carhack2"
+Carhack2.Parent = Carhack
+Carhack2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Carhack2.Position = UDim2.new(1.24390244, 0, -1.71052599, 0)
+Carhack2.Size = UDim2.new(0, 387, 0, 385)
+Carhack2.Visible = false
+Carhack2.Style = Enum.FrameStyle.RobloxRound
+ 
+Carspeed.Name = "Carspeed"
+Carspeed.Parent = Carhack2
+Carspeed.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Carspeed.Position = UDim2.new(0.0257328618, 0, 0.0678630471, 0)
+Carspeed.Size = UDim2.new(0, 142, 0, 43)
+Carspeed.Font = Enum.Font.SourceSans
+Carspeed.Text = "Car speed"
+Carspeed.TextColor3 = Color3.new(1, 1, 1)
+Carspeed.TextScaled = true
+Carspeed.TextSize = 14
+Carspeed.TextWrapped = true
+ 
+Teleporttocar.Name = "Teleporttocar"
+Teleporttocar.Parent = Carhack2
+Teleporttocar.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Teleporttocar.Position = UDim2.new(0.568368554, 0, 0.0678630471, 0)
+Teleporttocar.Size = UDim2.new(0, 142, 0, 43)
+Teleporttocar.Font = Enum.Font.SourceSans
+Teleporttocar.Text = "Tp to car"
+Teleporttocar.TextColor3 = Color3.new(1, 1, 1)
+Teleporttocar.TextScaled = true
+Teleporttocar.TextSize = 14
+Teleporttocar.TextWrapped = true
+ 
+Speed.Name = "Speed"
+Speed.Parent = Carhack2
+Speed.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Speed.Position = UDim2.new(0.0242416821, 0, 0.390298247, 0)
+Speed.Size = UDim2.new(0, 138, 0, 33)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = "Speed"
+Speed.TextColor3 = Color3.new(1, 1, 1)
+Speed.TextScaled = true
+Speed.TextSize = 14
+Speed.TextWrapped = true
+ 
+Torque.Name = "Torque"
+Torque.Parent = Carhack2
+Torque.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Torque.Position = UDim2.new(0.0242416821, 0, 0.514973581, 0)
+Torque.Size = UDim2.new(0, 138, 0, 33)
+Torque.Font = Enum.Font.SourceSans
+Torque.Text = "Torque"
+Torque.TextColor3 = Color3.new(1, 1, 1)
+Torque.TextScaled = true
+Torque.TextSize = 14
+Torque.TextWrapped = true
+ 
+Nitrospeed.Name = "Nitrospeed"
+Nitrospeed.Parent = Carhack2
+Nitrospeed.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Nitrospeed.Position = UDim2.new(0.0242416821, 0, 0.644843698, 0)
+Nitrospeed.Size = UDim2.new(0, 138, 0, 33)
+Nitrospeed.Font = Enum.Font.SourceSans
+Nitrospeed.Text = "Nitro Speed"
+Nitrospeed.TextColor3 = Color3.new(1, 1, 1)
+Nitrospeed.TextScaled = true
+Nitrospeed.TextSize = 14
+Nitrospeed.TextWrapped = true
+ 
+Nitroforce.Name = "Nitroforce"
+Nitroforce.Parent = Carhack2
+Nitroforce.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Nitroforce.Position = UDim2.new(0.0242416821, 0, 0.769518912, 0)
+Nitroforce.Size = UDim2.new(0, 138, 0, 33)
+Nitroforce.Font = Enum.Font.SourceSans
+Nitroforce.Text = "Nitro Force"
+Nitroforce.TextColor3 = Color3.new(1, 1, 1)
+Nitroforce.TextScaled = true
+Nitroforce.TextSize = 14
+Nitroforce.TextWrapped = true
+ 
+Nitroheight.Name = "Nitroheight"
+Nitroheight.Parent = Carhack2
+Nitroheight.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Nitroheight.Position = UDim2.new(0.0242416821, 0, 0.888999581, 0)
+Nitroheight.Size = UDim2.new(0, 138, 0, 33)
+Nitroheight.Font = Enum.Font.SourceSans
+Nitroheight.Text = "Nitro Height"
+Nitroheight.TextColor3 = Color3.new(1, 1, 1)
+Nitroheight.TextScaled = true
+Nitroheight.TextSize = 14
+Nitroheight.TextWrapped = true
+ 
+Amount1.Name = "Amount1"
+Amount1.Parent = Carhack2
+Amount1.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Amount1.Position = UDim2.new(0.44320339, 0, 0.396150172, 0)
+Amount1.Size = UDim2.new(0, 174, 0, 31)
+Amount1.Font = Enum.Font.SourceSans
+Amount1.Text = "Amount"
+Amount1.TextColor3 = Color3.new(1, 1, 1)
+Amount1.TextScaled = true
+Amount1.TextSize = 14
+Amount1.TextWrapped = true
+ 
+Amount2.Name = "Amount2"
+Amount2.Parent = Carhack2
+Amount2.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Amount2.Position = UDim2.new(0.440619409, 0, 0.520825505, 0)
+Amount2.Size = UDim2.new(0, 174, 0, 31)
+Amount2.Font = Enum.Font.SourceSans
+Amount2.Text = "Amount"
+Amount2.TextColor3 = Color3.new(1, 1, 1)
+Amount2.TextScaled = true
+Amount2.TextSize = 14
+Amount2.TextWrapped = true
+ 
+Amount3.Name = "Amount3"
+Amount3.Parent = Carhack2
+Amount3.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Amount3.Position = UDim2.new(0.438035429, 0, 0.650695622, 0)
+Amount3.Size = UDim2.new(0, 174, 0, 31)
+Amount3.Font = Enum.Font.SourceSans
+Amount3.Text = "Amount"
+Amount3.TextColor3 = Color3.new(1, 1, 1)
+Amount3.TextScaled = true
+Amount3.TextSize = 14
+Amount3.TextWrapped = true
+ 
+Amount4.Name = "Amount4"
+Amount4.Parent = Carhack2
+Amount4.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Amount4.Position = UDim2.new(0.435451448, 0, 0.772773504, 0)
+Amount4.Size = UDim2.new(0, 174, 0, 31)
+Amount4.Font = Enum.Font.SourceSans
+Amount4.Text = "Amount"
+Amount4.TextColor3 = Color3.new(1, 1, 1)
+Amount4.TextScaled = true
+Amount4.TextSize = 14
+Amount4.TextWrapped = true
+ 
+Amount5.Name = "Amount5"
+Amount5.Parent = Carhack2
+Amount5.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Amount5.Position = UDim2.new(0.440619409, 0, 0.876669645, 0)
+Amount5.Size = UDim2.new(0, 174, 0, 31)
+Amount5.Font = Enum.Font.SourceSans
+Amount5.Text = "Amount"
+Amount5.TextColor3 = Color3.new(1, 1, 1)
+Amount5.TextScaled = true
+Amount5.TextSize = 14
+Amount5.TextWrapped = true
+ 
+Close.Name = "Close"
+Close.Parent = Carhack2
+Close.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+Close.Position = UDim2.new(0.895532429, 0, -0.00497892313, 0)
+Close.Size = UDim2.new(0, 32, 0, 27)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.new(1, 1, 1)
+Close.TextScaled = true
+Close.TextSize = 14
+Close.TextWrapped = true
+ 
+Crate.Name = "Crate"
+Crate.Parent = MainFrame
+Crate.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Crate.Position = UDim2.new(0.0713139549, 0, 0.335612833, 0)
+Crate.Size = UDim2.new(0, 256, 0, 38)
+Crate.Font = Enum.Font.SourceSans
+Crate.Text = "Crates"
+Crate.TextColor3 = Color3.new(1, 1, 1)
+Crate.TextScaled = true
+Crate.TextSize = 14
+Crate.TextWrapped = true
+ 
+Crate2.Name = "Crate2"
+Crate2.Parent = Crate
+Crate2.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Crate2.Position = UDim2.new(1.3114754, 0, -4.42105246, 0)
+Crate2.Size = UDim2.new(0, 175, 0, 380)
+Crate2.Visible = false
+Crate2.Style = Enum.FrameStyle.RobloxRound
+ 
+Teleporttocrate.Name = "Teleporttocrate"
+Teleporttocrate.Parent = Crate2
+Teleporttocrate.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Teleporttocrate.Position = UDim2.new(0.102857143, 0, 0.244736835, 0)
+Teleporttocrate.Size = UDim2.new(0, 126, 0, 45)
+Teleporttocrate.Font = Enum.Font.SourceSans
+Teleporttocrate.Text = "Tp to crate"
+Teleporttocrate.TextColor3 = Color3.new(1, 1, 1)
+Teleporttocrate.TextScaled = true
+Teleporttocrate.TextSize = 14
+Teleporttocrate.TextWrapped = true
+ 
+Crateesp.Name = "Crateesp"
+Crateesp.Parent = Crate2
+Crateesp.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Crateesp.Position = UDim2.new(0.102857143, 0, 0.589473665, 0)
+Crateesp.Size = UDim2.new(0, 126, 0, 45)
+Crateesp.Font = Enum.Font.SourceSans
+Crateesp.Text = "Crate Esp"
+Crateesp.TextColor3 = Color3.new(1, 1, 1)
+Crateesp.TextScaled = true
+Crateesp.TextSize = 14
+Crateesp.TextWrapped = true
+ 
+Close_2.Name = "Close"
+Close_2.Parent = Crate2
+Close_2.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+Close_2.Position = UDim2.new(0.764483809, 0, -0.0053504142, 0)
+Close_2.Size = UDim2.new(0, 37, 0, 37)
+Close_2.Font = Enum.Font.SourceSans
+Close_2.Text = "X"
+Close_2.TextColor3 = Color3.new(1, 1, 1)
+Close_2.TextScaled = true
+Close_2.TextSize = 14
+Close_2.TextWrapped = true
+ 
+Gamepass.Name = "Gamepass"
+Gamepass.Parent = MainFrame
+Gamepass.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+Gamepass.Position = UDim2.new(0.0756219849, 0, 0.538608909, 0)
+Gamepass.Size = UDim2.new(0, 258, 0, 40)
+Gamepass.Font = Enum.Font.SourceSans
+Gamepass.Text = "Perks"
+Gamepass.TextColor3 = Color3.new(1, 1, 1)
+Gamepass.TextScaled = true
+Gamepass.TextSize = 14
+Gamepass.TextWrapped = true
+ 
+Gamepass2.Name = "Gamepass2"
+Gamepass2.Parent = Gamepass
+Gamepass2.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Gamepass2.Position = UDim2.new(1.3114754, 0, -5.52499962, 0)
+Gamepass2.Size = UDim2.new(0, 210, 0, 253)
+Gamepass2.Visible = false
+Gamepass2.Style = Enum.FrameStyle.RobloxRound
+ 
+Getallperks.Name = "Getallperks"
+Getallperks.Parent = Gamepass2
+Getallperks.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Getallperks.Position = UDim2.new(0.118322179, 0, 0.356699824, 0)
+Getallperks.Size = UDim2.new(0, 145, 0, 50)
+Getallperks.Font = Enum.Font.SourceSans
+Getallperks.Text = "Get all perks"
+Getallperks.TextColor3 = Color3.new(1, 1, 1)
+Getallperks.TextScaled = true
+Getallperks.TextSize = 14
+Getallperks.TextWrapped = true
+ 
+Close_3.Name = "Close"
+Close_3.Parent = Gamepass2
+Close_3.BackgroundColor3 = Color3.new(0.0392157, 0.0392157, 0.0392157)
+Close_3.Position = UDim2.new(0.788117886, 0, 0, 0)
+Close_3.Size = UDim2.new(0, 38, 0, 36)
+Close_3.Font = Enum.Font.SourceSans
+Close_3.Text = "X"
+Close_3.TextColor3 = Color3.new(1, 1, 1)
+Close_3.TextScaled = true
+Close_3.TextSize = 14
+Close_3.TextWrapped = true
+ 
+Credits.Name = "Credits"
+Credits.Parent = MainFrame
+Credits.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Credits.Position = UDim2.new(0.0953306183, 0, 0.713761449, 0)
+Credits.Size = UDim2.new(0, 258, 0, 35)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Made by Razerhacks3716#6650"
+Credits.TextColor3 = Color3.new(1, 1, 1)
+Credits.TextScaled = true
+Credits.TextSize = 20
+Credits.TextWrapped = true
+ 
+Credits2.Name = "Credits2"
+Credits2.Parent = MainFrame
+Credits2.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Credits2.Position = UDim2.new(0.0874390602, 0, 0.863838196, 0)
+Credits2.Size = UDim2.new(0, 263, 0, 28)
+Credits2.Font = Enum.Font.SourceSans
+Credits2.Text = "Keep in mind that when script is updated, it changes"
+Credits2.TextColor3 = Color3.new(1, 1, 1)
+Credits2.TextScaled = true
+Credits2.TextSize = 14
+Credits2.TextWrapped = true
+-- Scripts:
+ 
+Carhack.MouseButton1Down:connect(function() 
+MainFrame.Visible = true
+Carhack2.Visible = true
+end)
+ 
+Close.MouseButton1Down:connect(function() 
+MainFrame.Visible = true
+Carhack2.Visible = false
+end)
+ 
+Crate.MouseButton1Down:connect(function() 
+MainFrame.Visible = true
+Crate2.Visible = true
+end)
+ 
+Close_2.MouseButton1Down:connect(function() 
+MainFrame.Visible = true
+Crate2.Visible = false
+end)
+ 
+Gamepass.MouseButton1Down:connect(function() 
+MainFrame.Visible = true
+Gamepass2.Visible = true
+end)
+ 
+Close_3.MouseButton1Down:connect(function() 
+MainFrame.Visible = true
+Gamepass2.Visible = false
+end)
+ 
+--------------SCRIPTS---------------------
+function findCar()
+local vehicle = workspace.Vehicles:getChildren()
+for i=1,#vehicle do
+if vehicle[i]:findFirstChild("owner") then
+if vehicle[i].owner.Value == game.Players.LocalPlayer.Name then
+myCar = vehicle[i]
+end
+end
+end
+end
+ 
+Carspeed.MouseButton1Down:connect(function()
+findCar()
+myCar.Handling.MaxSpeed.Value = 10000
+myCar.Handling.Torque.Value = 40000
+myCar.Handling.SteeringRadiusConstant.Value = 15000
+myCar.Handling.FrictionRoad.Value = 250
+myCar.Handling.Nitro.NitroSpeed.Value = 500
+myCar.Handling.Nitro.NitroForce.Value = 5000
+myCar.Handling.TurboJump.TurboJumpHeight.Value = 250
+end)
+ 
+Speed.MouseButton1Down:connect(function()
+findCar()
+myCar.Handling.MaxSpeed.Value =Amount1.Text
+myCar.Handling.SteeringRadiusConstant.Value = 15000
+end)
+ 
+Torque.MouseButton1Down:connect(function()
+findCar()
+myCar.Handling.Torque.Value = Amount2.Text
+end)
+ 
+Nitrospeed.MouseButton1Down:connect(function()
+findCar()
+myCar.Handling.Nitro.NitroSpeed.Value = Amount3.Text
+end)
+ 
+Nitroforce.MouseButton1Down:connect(function()
+findCar()
+myCar.Handling.Nitro.NitroForce.Value = Amount4.Text
+end)
+ 
+Nitroheight.MouseButton1Down:connect(function()
+findCar()
+myCar.Handling.TurboJump.TurboJumpHeight.Value = Amount5.Text
+end)
+ 
+Teleporttocar.MouseButton1Down:connect(function()
+    findCar()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(myCar.Chassis.VehicleSeat.Position+myCar.Chassis.VehicleSeat.SeatOffset.Value)
+end)
+ 
+Crateesp.MouseButton1Down:connect(function()
+    local crates = workspace:getChildren()
+for i=1,#crates do
+if crates[i].ClassName == "Model" then
+local crates2 = crates[i]:getChildren()
+for i=1,#crates2 do
+if crates2[i].ClassName == "Model" then
+local crates3 = crates2[i]:getChildren()
+for i=1,#crates3 do
+if crates3[i].ClassName == "MeshPart" then
+if crates3[i]:findFirstChild("Smoke") then
+if crates3[i]:findFirstChild("BoxHandleAdornment") then
+    crates3[i]:findFirstChild("BoxHandleAdornment"):Remove()
+else
+local a = Instance.new("BoxHandleAdornment",crates3[i])
+a.Size = Vector3.new(10,500,6)
+a.SizeRelativeOffset = Vector3.new(0,135,0)
+a.Color3 = Color3.fromRGB(0,255,0)
+a.Transparency = 0.5
+a.AlwaysOnTop = true
+a.Adornee = crates3[i]
+a.ZIndex = 1
+local b = Instance.new("BoxHandleAdornment",crates3[i])
+b.Size = Vector3.new(10,4,6)
+b.Color3 = Color3.fromRGB(0,0,255)
+b.Transparency = 0.3
+b.AlwaysOnTop = true
+b.Adornee = crates3[i]
+b.ZIndex = 1
+end
+end
+end
+end
+end
+end
+end
+end
+end)
+ 
+Teleporttocrate.MouseButton1Down:connect(function()
+    local crates = workspace:getChildren()
+for i=1,#crates do
+if crates[i].ClassName == "Model" then
+local crates2 = crates[i]:getChildren()
+for i=1,#crates2 do
+if crates2[i].ClassName == "Model" then
+local crates3 = crates2[i]:getChildren()
+for i=1,#crates3 do
+if crates3[i].ClassName == "MeshPart" then
+if crates3[i]:findFirstChild("Smoke") then
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(crates3[i].Position.X+30,crates3[i].Position.Y+5,crates3[i].Position.Z))
+wait()
+game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(crates3[i].Position.X,crates3[i].Position.Y,crates3[i].Position.Z))
+wait(4)
+end
+end
+end
+end
+end
+end
+end
+end)
+ 
+Getallperks.MouseButton1Down:connect(function()
+game:GetService("Players").LocalPlayer.UserId = 1099580
+end)
